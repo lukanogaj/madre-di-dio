@@ -1,0 +1,30 @@
+:root {
+	--color-bg: #fffaf4;
+	--color-surface: #f8efe5;
+	--color-text: #342c28;
+	--color-text-muted: #756b65;
+
+	--color-accent: #b68a63;
+	--color-accent-light: #d7b99c;
+	--color-border: #e7d8ca;
+
+	--font-heading: Georgia, "Times New Roman", serif;
+	--font-body: Arial, Helvetica, sans-serif;
+
+	--max-width: 1200px;
+	--section-padding: 80px;
+	--radius: 10px;
+
+	--transition: 0.3s ease;
+}
+
+[data-theme="dark"] {
+	--color-bg: #101514;
+	--color-surface: #19201f;
+	--color-text: #f6efe7;
+	--color-text-muted: #c5b9ae;
+
+	--color-accent: #c39a72;
+	--color-accent-light: #dfc09f;
+	--color-border: #3b3530;
+}

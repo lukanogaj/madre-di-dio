@@ -1,0 +1,155 @@
+.about {
+	padding: 72px 0;
+
+	background: var(--color-bg);
+}
+
+.about__container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 48px;
+}
+
+/* About content */
+
+.about__content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.about__eyebrow {
+	margin-bottom: 12px;
+
+	color: var(--color-accent);
+
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+
+.about__title {
+	max-width: 520px;
+	margin-bottom: 24px;
+
+	color: var(--color-text);
+
+	font-size: clamp(2rem, 6vw, 3.2rem);
+	line-height: 1.1;
+}
+
+.about__content p {
+	max-width: 600px;
+	margin-bottom: 16px;
+
+	color: var(--color-text-muted);
+
+	font-size: 0.95rem;
+	line-height: 1.8;
+}
+
+.about__contact-link {
+	display: inline-flex;
+	min-height: 46px;
+
+	align-items: center;
+	justify-content: center;
+
+	margin-top: 12px;
+	padding: 10px 22px;
+
+	color: var(--color-text);
+
+	border: 1px solid var(--color-accent);
+	border-radius: 4px;
+
+	font-size: 0.78rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+
+	transition:
+		color var(--transition),
+		background-color var(--transition);
+}
+
+.about__contact-link:hover {
+	color: var(--color-bg);
+	background: var(--color-accent);
+}
+
+/* Featured recording */
+
+.about__recording {
+	width: 100%;
+}
+
+.about__recording-placeholder {
+	min-height: 320px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 14px;
+
+	background:
+		linear-gradient(rgba(25, 20, 18, 0.3), rgba(25, 20, 18, 0.55)),
+		var(--color-surface);
+
+	border-radius: 6px;
+
+	color: #fff;
+
+	font-size: 0.75rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+/* Play button */
+
+.about__play-button {
+	width: 64px;
+	height: 64px;
+
+	display: grid;
+	place-items: center;
+
+	padding-left: 4px;
+
+	color: #fff;
+	background: transparent;
+
+	border: 2px solid #fff;
+	border-radius: 50%;
+
+	font-size: 1.2rem;
+
+	transition:
+		transform var(--transition),
+		background-color var(--transition);
+}
+
+.about__play-button:hover {
+	transform: scale(1.06);
+
+	background: rgba(255, 255, 255, 0.12);
+}
+
+/* Desktop */
+
+@media (min-width: 768px) {
+	.about {
+		padding: 96px 0;
+	}
+
+	.about__container {
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		gap: 72px;
+	}
+
+	.about__recording-placeholder {
+		min-height: 430px;
+	}
+}
